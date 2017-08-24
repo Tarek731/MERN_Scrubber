@@ -1,27 +1,32 @@
 {
-  "name": "mern_scrubber",
+  "name": "react-example",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "webpack & node server",
+    "start": "node server",
+    "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tarek731/MERN_Scrubber.git"
-  },
-  "author": "",
+  "author": "Ahmed Haque",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tarek731/MERN_Scrubber/issues"
-  },
-  "homepage": "https://github.com/Tarek731/MERN_Scrubber#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "logger": "0.0.1",
-    "mongoose": "^4.11.6",
-    "morgan": "^1.8.2"
+    "mongoose": "^4.11.7",
+    "morgan": "^1.8.2",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.13.1"
   }
 }
